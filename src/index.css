@@ -1,0 +1,21 @@
+:root {
+	--electricViolet: #9000ff;
+	--error: #fe6666;
+	--warning: #ff9966;
+	--sucess: #32cc99;
+	--white: #ffffff;
+	--black: #000000;
+	--darkGray: #180a33;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
