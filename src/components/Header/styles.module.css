@@ -1,5 +1,13 @@
 .header {
 	background-color: var(--electricViolet);
+	padding: 0 40rem;
 	width: 100%;
-	height: 50px;
+	height: 100px;
+
+	color: var(--white);
+	font-weight: bold;
+	font-size: 2rem;
+
+	display: flex;
+	align-items: center;
 }
