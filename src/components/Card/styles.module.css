@@ -8,6 +8,12 @@
 .card-image {
 	background-color: var(--black);
 	height: 80%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.card-image img {
+	width: 100%;
 }
 
 .card-title {
