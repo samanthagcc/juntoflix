@@ -5,22 +5,24 @@ import { Card } from '../Card/Card';
 import styles from './styles.module.css';
 
 export default function List() {
-	const [characters, setCharacters] = useState([]);
+	const [comics, setComics] = useState([]);
 
-	async function getCharacters() {
-		const response = await api.get('/characters');
-		const listofCharacters = response.data.data.results;
-		setCharacters(listofCharacters);
+	async function getComics() {
+		const response = await api.get('/comics');
+		const listOfComics = response.data.data.results;
+		setComics(listOfComics);
+
+		console.log(listOfComics);
 	}
 
 	useEffect(() => {
-		getCharacters();
+		getComics();
 	}, []);
 
 	return (
 		<div className={styles['list-container']}>
-			{characters.map((character) => (
-				<Card props={character} />
+			{comics.map((comic) => (
+				<Card props={comic} />
 			))}
 		</div>
 	);
