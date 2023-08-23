@@ -1,0 +1,10 @@
+.list-container {
+	width: 80%;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+}

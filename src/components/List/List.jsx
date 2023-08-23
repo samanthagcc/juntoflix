@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 
-export default function ListOfCharacters() {
+import { Card } from '../Card/Card';
+import styles from './styles.module.css';
+
+export default function List() {
 	const [characters, setCharacters] = useState([]);
 
 	async function getCharacters() {
@@ -15,10 +18,10 @@ export default function ListOfCharacters() {
 	}, []);
 
 	return (
-		<ul>
+		<div className={styles['list-container']}>
 			{characters.map((character) => (
-				<li>{character.name}</li>
+				<Card props={character} />
 			))}
-		</ul>
+		</div>
 	);
 }

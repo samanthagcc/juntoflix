@@ -1,14 +1,11 @@
 import { Header } from '../src/components/Header/Header';
-import ListOfCharacters from './components/ListOfCharacters/ListOfCharacters';
+import List from './components/List/List';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<ListOfCharacters />
-			<ListOfCharacters />
-			<ListOfCharacters />
-			<ListOfCharacters />
+			<List />
 		</>
 	);
 }
