@@ -1,5 +1,5 @@
-import { Header } from '../src/components/Header/Header';
-import List from './components/List/List';
+import Header from '../src/components/Header';
+import List from './components/List';
 
 function App() {
 	return (
