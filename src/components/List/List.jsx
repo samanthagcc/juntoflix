@@ -11,8 +11,6 @@ export default function List() {
 		const response = await api.get('/comics');
 		const listOfComics = response.data.data.results;
 		setComics(listOfComics);
-
-		console.log(listOfComics);
 	}
 
 	useEffect(() => {
